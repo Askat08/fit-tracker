@@ -71,7 +71,7 @@ export default class ExercisesList extends Component {
 
   render() {
     return (
-      <div className="table-responsive-sm">
+      <div className="table-responsive-sm-6 mt-5">
         <h3>Logged Exercises</h3>
         <table className="table">
           <thead className="thead-light">

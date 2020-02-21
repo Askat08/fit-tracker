@@ -9,7 +9,7 @@ import banner3 from "../img/banner3.jpg";
 
 const Banner = props => {
   return (
-    <div className="mt-1">
+    <div className="container-expand-md mt-5">
       <div id="carousel" className="carousel slide" data-ride="carousel">
         <ol className="carousel-indicators">
           <li data-target="#carousel" data-slide-to="0" className="active"></li>
@@ -67,30 +67,32 @@ const Banner = props => {
           <span className="sr-only">Next</span>
         </a>
       </div>
-      <div className="jumbotron d-flex flex-row bd-highlight mt-5 mb-5">
-        <div className="p-2 bd-highlight mr-5">
-          <div className="mb-5">
-            <FontAwesomeIcon icon={faInfoCircle} size="2x" />
-            <h3 className="d-inline ml-3">What is FitTrack App?</h3>
+      <div className="container bd-highlight mt-5 mb-5">
+        <div className="row mt-5">
+          <div className="col-12 col-md-6  mt-5 mb-5">
+            <div className="mb-5">
+              <FontAwesomeIcon icon={faInfoCircle} size="2x" />
+              <h3 className="d-inline ml-3">What is FitTrack App?</h3>
+            </div>
+            <p className="lead">
+              FitTrack App is designed to replace your paper workout journal. It
+              combines the best features found in other apps with a minimalistic
+              approach and a clean, easy-to-use interface. Give it a try. We
+              know you'll love it!
+            </p>
           </div>
-          <p className="lead">
-            FitTrack App is designed to replace your paper workout journal. It
-            combines the best features found in other apps with a minimalistic
-            approach and a clean, easy-to-use interface. Give it a try. We know
-            you'll love it!
-          </p>
-        </div>
 
-        <div className="p-2 bd-highlight ml-5">
-          <div className="mb-5">
-            <FontAwesomeIcon icon={faHeart} size="2x" />
-            <h3 className="d-inline ml-3">Why people love it</h3>
+          <div className="col-12 col-md-6 mt-5">
+            <div className="mb-5">
+              <FontAwesomeIcon icon={faHeart} size="2x" />
+              <h3 className="d-inline ml-3">Why people love it</h3>
+            </div>
+            <p className="lead">
+              We've been able to put together a great combination of simplicity,
+              usability, and features. Because of this, FitTrack has become one
+              of the most popular workout tracking apps.
+            </p>
           </div>
-          <p className="lead">
-            We've been able to put together a great combination of simplicity,
-            usability, and features. Because of this, FitTrack has become one of
-            the most popular workout tracking apps.
-          </p>
         </div>
       </div>
     </div>

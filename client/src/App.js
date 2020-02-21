@@ -9,8 +9,8 @@ import ExercisesList from "./components/exercises-list.component";
 import EditExercise from "./components/edit-exercise.component";
 import CreateExercise from "./components/create-exercise.component";
 import CreateUser from "./components/create-user.component";
-import Banner from "./components/banner";
-import Footer from "./components/footer";
+import Banner from "./components/banner.component";
+import Footer from "./components/footer.component";
 
 function App() {
   return (
