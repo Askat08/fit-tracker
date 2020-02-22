@@ -38,7 +38,7 @@ router.delete("/:id", (req, res) => {
     .catch(err => res.status(400).json("Error: " + err));
 });
 
-router.route("/update/:id").update((req, res) => {
+router.post("/update/:id", (req, res) => {
   Exercise.findById(req.params.id)
     .then(exercise => {
       exercise.username = req.body.username;
