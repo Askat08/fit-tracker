@@ -1,5 +1,5 @@
 {
-  "name": "Fit Tracker app backend",
+  "name": "fit_tracker_app_backend",
   "version": "1.0.0",
   "description": "Simple FitTrack app",
   "main": "server.js",
