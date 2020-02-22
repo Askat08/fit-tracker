@@ -33,8 +33,8 @@ connection.once("open", () => {
 });
 
 // Require files
-const exercisesRouter = require("./routes/exercises");
-const usersRouter = require("./routes/users");
+const exercisesRouter = require("./routes/api/exercises");
+const usersRouter = require("./routes/api/users");
 
 // Use
 app.use("/exercises", exercisesRouter);
