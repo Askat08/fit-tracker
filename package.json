@@ -1,8 +1,8 @@
 {
-  "name": "backend",
+  "name": "Fit Tracker app backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Simple FitTrack app",
+  "main": "server.js",
   "scripts": {
     "client-install": "npm install --prefix client",
     "start": "node server.js",
