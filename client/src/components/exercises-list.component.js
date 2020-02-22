@@ -9,7 +9,7 @@ const Exercise = props => (
     <td>{props.exercise.duration}</td>
     <td>{props.exercise.date.substring(0, 10)}</td>
     <td>
-      <Link to={"/edit" + props.exercise._id}>
+      <Link to={"/edit/" + props.exercise._id}>
         <button type="button" className="btn btn-outline-info">
           edit
         </button>
@@ -49,7 +49,7 @@ export default class ExercisesList extends Component {
 
   deleteExercise = id => {
     axios
-      .delete("http://localhost:5000/exercises" + id)
+      .delete("http://localhost:5000/exercises/" + id)
       .then(res => console.log(res.data));
     // Removing deleted exercise from UI
     this.setState({

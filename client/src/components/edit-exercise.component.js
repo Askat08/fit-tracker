@@ -17,7 +17,7 @@ export default class EditExercise extends Component {
 
   componentDidMount() {
     axios
-      .get("http://localhost:5000/exercises" + this.props.match.params.id)
+      .get("http://localhost:5000/exercises/" + this.props.match.params._id)
       .then(response => {
         this.setState({
           username: response.data.username,
@@ -77,7 +77,7 @@ export default class EditExercise extends Component {
 
     axios
       .post(
-        "http://localhost:5000/exercises/update" + this.props.match.params.id,
+        "http://localhost:5000/exercises/update/" + this.props.match.params.id,
         exercise
       )
       .then(res => console.log(res.data));
