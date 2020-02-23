@@ -24,7 +24,7 @@ const Footer = props => {
                 href="https://github.com/Askat08"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mr-1"
+                className="mr-1 text-white"
               >
                 <FontAwesomeIcon icon={faGithub} size="2x" />
               </a>
@@ -32,7 +32,7 @@ const Footer = props => {
                 href="https://www.linkedin.com/in/askat-bakyev/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="ml-1"
+                className="ml-1 text-white"
               >
                 <FontAwesomeIcon icon={faLinkedin} size="2x" />
               </a>
