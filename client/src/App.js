@@ -19,7 +19,7 @@ function App() {
         <Navbar />
         <br />
         <Route path="/" exact component={Banner} />
-        <Route path="/exercises" component={ExercisesList} />
+        <Route path="/exercise" component={ExercisesList} />
         <Route path="/edit/:id" component={EditExercise} />
         <Route path="/create" component={CreateExercise} />
         <Route path="/user" component={CreateUser} />
