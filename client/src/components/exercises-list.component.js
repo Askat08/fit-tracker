@@ -38,11 +38,12 @@ export default class ExercisesList extends Component {
 
   componentDidMount() {
     axios
-      .get("http://localhost:5000/exercises")
+      .get("http://localhost:5000/exercises/")
       .then(response => {
         this.setState({
           exercises: response.data
         });
+        console.log(response.data);
       })
       .catch(err => console.log("Произошла какая то хуйня  ---" + err));
   }
