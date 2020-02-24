@@ -48,7 +48,7 @@ router.route("/update/:id").post((req, res) => {
 
       exercise
         .save()
-        .then(() => res.json("Exercise updated!"))
+        .then(() => res.json({msg: "Exercise updated!"}))
         .catch(err => res.status(400).json({err}));
     })
     .catch(err => res.status(400).json({err}));
