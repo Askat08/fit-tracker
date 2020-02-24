@@ -1,2 +1,2 @@
 # fit-tracker
-Simple Fit Track MERN app
+Simple Fit Track app MERN stack
