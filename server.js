@@ -12,6 +12,17 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
+// Cors setup
+// app.use((req, res, next) => {
+//   res.header("Access-Control-Allow-Origin", "*");
+//   res.header("Access-Control-Allow-Methods", "DELETE, PUT, GET, POST");
+//   res.header(
+//     "Access-Control-Allow-Headers",
+//     "Origin, X-Requested-With, Content-Type, Accept"
+//   );
+//   next();
+// });
+
 // DB Connection
 const uri = process.env.ATLAS_URI;
 mongoose.connect(uri, {
@@ -23,16 +34,6 @@ const connection = mongoose.connection;
 connection.once("open", () => {
   console.log("MongoDB database connection established successfuly");
 });
-
-// app.use((req, res, next) => {
-//   res.header("Access-Control-Allow-Origin", "*");
-//   res.header("Access-Control-Allow-Methods", "DELETE, PUT, GET, POST");
-//   res.header(
-//     "Access-Control-Allow-Headers",
-//     "Origin, X-Requested-With, Content-Type, Accept"
-//   );
-//   next();
-// });
 
 // Require files
 const exercisesRouter = require("./routes/exercises");
