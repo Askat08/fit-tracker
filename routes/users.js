@@ -15,7 +15,7 @@ router.post("/add", (req, res) => {
     .then(() => {
       res.json("User added");
     })
-    .catch(err => res.status(400).json("Errorkotokbash: " + err));
+    .catch(err => res.status(400).json("Error: " + err));
 });
 
 module.exports = router;

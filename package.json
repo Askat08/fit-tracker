@@ -15,7 +15,6 @@
   "author": "Askat Bakyev",
   "license": "ISC",
   "dependencies": {
-    "D": "^1.0.0",
     "concurrently": "^5.1.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
